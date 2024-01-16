@@ -8,8 +8,22 @@ const productSchema = mongoose.Schema({
   subCategory:String,
   rating: String,
   image: String,
+  imagetwo:String,
   brand: String,
   para: String,
+  text:String,
+  about:String,
+  company:String,
+  repolink:String,
+  hostlink:String,
+  title:String,
+  post:String,
+  duration:String,
+  durationheading:String,
+  participantsheading:String,
+  participants:String,
+  dateheading:String,
+  date:String,
 });
 const productColletion = mongoose.model("productColletion_All", productSchema);
 
