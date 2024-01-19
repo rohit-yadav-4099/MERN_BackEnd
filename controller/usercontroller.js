@@ -19,7 +19,7 @@ const register = async (req, res) => {
     name: data.name,
     phone: data.phone,
     collage: data.collage,
-    year: data.year
+    passingYear: data.passingYear
   };
   const response = await UserRegister.create(tempObj);
   console.log(response);

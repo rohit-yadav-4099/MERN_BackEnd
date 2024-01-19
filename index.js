@@ -1,5 +1,4 @@
 const express = require("express");
-const searchroute = require("./route/searchrouter");
 const productRoute = require("./route/productRote");
 const app = express();
 const cors = require("cors");
@@ -10,16 +9,11 @@ const routeone = require("./route/userrouter");
 const port = process.env.PORT || 3030;
 
 app.use(express.json());
-// app.use(
-//   cors({
-//     origin: "*",
-//   })
-// );
 
 app.use(cors());
 
 app.use(express.urlencoded({ extended: true }));
-app.use(searchroute);
+
 app.use("/api", routeone);
 app.use("/api", productRoute);
 
@@ -49,6 +43,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
   });
   res.json({ id: session.id });
 });
+
 app.listen(port, async () => {
   try {
     await connection();

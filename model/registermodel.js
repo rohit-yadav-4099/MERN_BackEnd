@@ -26,7 +26,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: [true,"enter collage name"],
     },
-    year: {
+    passingYear: {
         type: Number,
         required: [true,"enter passing year"],
     },
