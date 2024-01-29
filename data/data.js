@@ -429,35 +429,35 @@ const data = [
     {
         id: 64,
         name:"Application & Shortlisting",
-        text:"1",
+        para:"1",
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Application%2B%2BShortlisting.webp",
         text:"Apply, fill the form & wait till we review your application. You will be selected based on the eligibility criteria (2023, 2022 & 2021 passouts)"
     },
     {
         id: 65,
         name:"Attend Free Webinar",
-        text:"2",
+        para:"2",
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/5%2BDays%2BFree%2BClass.webp",
         text:"Go through the free classes and learn the important concepts while understanding how the program unfolds."
     },
     {
         id: 66,
         name:"Batch Commencement",
-        text:"3",
+        para:"3",
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Complete%2BEnrollment%2B.webp",
         text:"Embark on your journey of success once you receive the offer letter for successful enrolment."
     },
     {
         id: 67,
         name:"7 Months Program",
-        text:"4",
+        para:"4",
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/4%2BMonths%2BPrograms.webp",
         text:"You have now signed up for a learning-filled journey of 7 months that ends with you being placed in your dream company."
     },
     {
         id: 68,
         name:"Guaranteed Placement",
-        text:"5",
+        para:"5",
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/elevation-academy/Images/Interview%2BOpportunities%2B.webp",
         text:"The program comes with interview opportunities and a placement guarantee of minimum 5 LPA."
     },
