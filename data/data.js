@@ -52,7 +52,8 @@ const data = [
         participants:"1101",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 8,
@@ -63,7 +64,8 @@ const data = [
         participants:"1015",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 9,
@@ -74,7 +76,8 @@ const data = [
         participants:"2142",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 10,
@@ -85,7 +88,8 @@ const data = [
         participants:"2410",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 11,
@@ -96,7 +100,8 @@ const data = [
         participants:"2665",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 12,
@@ -107,7 +112,8 @@ const data = [
         participants:"2440",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 13,
@@ -118,7 +124,8 @@ const data = [
         participants:"2037",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 14,
@@ -129,7 +136,8 @@ const data = [
         participants:"1930",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 15,
@@ -140,7 +148,8 @@ const data = [
         participants:"2034",
         participantsheading:"Participants",
         duration:"60 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 16,
@@ -151,7 +160,8 @@ const data = [
         participants:"1101",
         participantsheading:"Participants",
         duration:"120 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 17,
@@ -162,7 +172,8 @@ const data = [
         participants:"1794",
         participantsheading:"Participants",
         duration:"120 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 18,
@@ -173,92 +184,112 @@ const data = [
         participants:"1719",
         participantsheading:"Participants",
         duration:"120 min",
-        durationheading:"Duration"
+        durationheading:"Duration",
+        price:2000
     },
     {
         id: 19,
         image:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1624132865618-aptitude.svg",
-        name:"Aptitude"
+        name:"Aptitude",
+        price:2000
     },
     {
         id: 20,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/topic/IPv4.svg",
-        name:"Computer Network"
+        name:"Computer Network",
+        price:2000
     },
     {
         id: 21,
         image:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1623816734176-anomalies-and-functional-dependency.svg",
-        name:"Database Management System"
+        name:"Database Management System",
+        price:2000
     },
     {
         id: 22,
         image:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1623765556116-backtracking.svg",
-        name:"Algorithms"
+        name:"Algorithms",
+        price:2000
     },
     {
         id: 23,
         image:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1623815849291-arrays-and-pointers.svg",
-        name:"C Language"
+        name:"C Language",
+        price:2000
     },
     {
         id: 24,
         image:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1623817215289-atomic-transactions.svg",
-        name:"Operating System"
+        name:"Operating System",
+        price:2000
     },
     {
         id: 25,
         image:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1623816336071-abstraction.svg",
-        name:"C++ Language"
+        name:"C++ Language",
+        price:2000
     },
     {
         id: 26,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/topic/array.svg",
-        name:"Data Structure"
+        name:"Data Structure",
+        price:2000
     },
     {
         id: 27,
         image:"https://prepbytes-misc-images.s3.ap-south-1.amazonaws.com/assets/1623816917473-access-modifiers-this-super.svg",
-        name:"Java Language"
+        name:"Java Language",
+        price:2000
     },
     {
         id: 28,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/ibm.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/ibm.svg",
+        price:2000
     },
     {
         id: 29,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/hcl.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/hcl.svg",
+        price:2000
     },
     {
         id: 30,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/zenser.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/zenser.svg",
+        price:2000
     },
     {
         id: 31,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/accenture.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/accenture.svg",
+        price:2000
     },
     {
         id: 32,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/techmahindra.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/techmahindra.svg",
+        price:2000
     },
     {
         id: 33,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/sap.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/sap.svg",
+        price:2000
     },
     {
         id: 34,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/samsung.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/samsung.svg",
+        price:2000
     },
     {
         id: 35,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/hsbc.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/hsbc.svg",
+        price:2000
     },
     {
         id: 36,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/adobe.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/adobe.svg",
+        price:2000
     },
     {
         id: 37,
-        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/honeywell.svg"
+        image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/honeywell.svg",
+        price:2000
     },
 
     // 

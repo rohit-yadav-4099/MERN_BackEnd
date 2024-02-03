@@ -14,6 +14,7 @@ const productSchema = mongoose.Schema({
   imagefour: String,
   brand: String,
   para: String,
+  price: Number,
   text:String,
   about:String,
   company:String,
