@@ -36,7 +36,7 @@ const secretkey = "cloneProject"
 let course1 = ""
 let storeItem = ""
 
-// app.use('/payment',paymentRoute)
+
 
 
 // const { PAYPAL_CLIENT_ID, PAYPAL_CLIENT_SECRET } = process.env;
@@ -140,29 +140,6 @@ let storeItem = ""
 
 // checkout Api
 
-// app.post("/api/create-checkout-session", async (req, res) => {
-//   const { products } = req.body;
-//   console.log(products);
-//   const lineItems = products.map((product) => ({
-//     price_data: {
-//       currency: "inr",
-//       product_data: {
-//         name: product.name,
-//       },
-//       unit_amount: product.price * 100,
-//     },
-//     quantity: product.quantity,
-//   }));
-
-//   const session = await stripe.checkout.sessions.create({
-//     payment_method_types: ["card"],
-//     line_items: lineItems,
-//     mode: "payment",
-//     success_url: "https://localhost:3000/success",
-//     cancel_url: "https://localhost:3000/cancle",
-//   });
-//   res.json({ id: session.id });
-// });
 
 
 
@@ -272,14 +249,14 @@ app.post("/createcheckout", async (req, res) => {
 });
 
 
-app.get("/Success", (req, res) => {
+// app.get("/Success", (req, res) => {
 
-  return res.send(htmlsuccesspage)
+//   return res.send(htmlsuccesspage)
 
-})
-app.get("/Cancel", (req, res) => {
-  return res.send({ msg: "cancel" })
-})
+// })
+// app.get("/Cancel", (req, res) => {
+//   return res.send({ msg: "cancel" })
+// })
 
 app.get("/bought",async (req,res)=>{
   const buyingcourses=await coursetype.find({useremail:{$eq:course1}})

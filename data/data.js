@@ -244,51 +244,61 @@ const data = [
     {
         id: 28,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/ibm.svg",
+        name:"HCL",
         price:2000
     },
     {
         id: 29,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/hcl.svg",
+        name:"IBM",
         price:2000
     },
     {
         id: 30,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/zenser.svg",
+        name:"ZenSar",
         price:2000
     },
     {
         id: 31,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/accenture.svg",
+        name:"accenture",
         price:2000
     },
     {
         id: 32,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/techmahindra.svg",
+        name:"Tech Mahindra",
         price:2000
     },
     {
         id: 33,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/sap.svg",
+        name:"SAP",
         price:2000
     },
     {
         id: 34,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/samsung.svg",
+        name:"SAMSUNG",
         price:2000
     },
     {
         id: 35,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/hsbc.svg",
+        name:"HSBC",
         price:2000
     },
     {
         id: 36,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/adobe.svg",
+        name:"Adobe",
         price:2000
     },
     {
         id: 37,
         image:"https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/images/mock-test/company/honeywell.svg",
+        name:"honeywell",
         price:2000
     },
 
