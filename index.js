@@ -30,7 +30,7 @@ app.use("/api", productRoute);
 const { coursetype } = require('./model/courseSchema')
 
 const stripe = require('stripe')("sk_test_51Oeem7SBO2dXKM0566TtteRGgiQpNAJ5SsKhl7tkWLmh621NS4SweS3hHkkK9g9m5a5OjVDWEvbNYozl3h5j06ra00KtUVEMN4")
-const saltround = 10
+// const saltround = 10
 const secretkey = "cloneProject"
 
 let course1 = ""
@@ -141,62 +141,26 @@ let storeItem = ""
 // checkout Api
 
 
-
-
-
-// const htmlsuccesspage = `
-// <!DOCTYPE html>
-// <html lang="en">
-// <head>
-//     <meta charset="UTF-8">
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//     <style>
-//         body {
-//             font-family: Arial, sans-serif;
-//             background-color: #f0f0f0;
-//         }
-//         h1 {
-//             color: blue;
-//             margin-left:20%;
-//             margin-bottom:30px;
-            
-//         }
-//         .cont{
-//             display:flex;
-//             align-items:center;
-//             flex-direction:column;
-//             border:2px;
-            
-//         }
-//        button{
-            
-//             margin:45%;
-//             margin-top:30px;
-//        }
-//     </style>
-//     <title>payment</title>
-// </head>
-// <body>
-// <div className="cont">
-// <div>
-//     <h1>Payment successfull and course confirmed</h1>
-//     <div>
-    
-//      <button className=" bot1"><NavLink to="/">continue with your course</NavLink></button>
-//     </div>
-//     </div>
-//     </body>
-// </html>
-// `;
-
+app.post("/books", (req, res) => {
+  return res.send(arr)
+})
 
 
 app.post("/createcheckout", async (req, res) => {
- 
+
   const { products } = await req.body;
- 
+
   console.log(products);
   console.log(typeof (products))
+
+  // course1 = {
+  //   useremail: specificdata.useremail,
+  //   bookname: specificdata.bookname,
+  //   price: specificdata.price
+  // }
+  // const ressee = coursestr.create(course1)
+  // console.log(ressee)
+  // const dbres1 = await reg.create(user)
 
   storeItem = products.map((item) => ({
     useremail: item.useremail,
@@ -221,7 +185,7 @@ app.post("/createcheckout", async (req, res) => {
       product_data: {
         name: prod.name,
       },
-      unit_amount: prod.price * 100 ,
+      unit_amount: prod.price * 100,
     },
     quantity: 1,
   }));
@@ -235,8 +199,8 @@ app.post("/createcheckout", async (req, res) => {
       line_items: lineItems,
       mode: "payment",
 
-      success_url: "http://localhost:3000/dashboard",
-      cancel_url: "http://localhost:3000/cancel",
+      success_url: "https://prepbytesclone.vercel.app/dashboard",
+      cancel_url: "https://prepbytesclone.vercel.app/cancel",
     });
 
     res.json({ id: session.id });
@@ -258,10 +222,10 @@ app.post("/createcheckout", async (req, res) => {
 //   return res.send({ msg: "cancel" })
 // })
 
-app.get("/bought",async (req,res)=>{
-  const buyingcourses=await coursetype.find({useremail:{$eq:course1}})
+app.get("/bought", async (req, res) => {
+  const buyingcourses = await coursetype.find({ useremail: { $eq: course1 } })
   console.log(buyingcourses)
-  
+
   return res.send(buyingcourses)
 })
 
