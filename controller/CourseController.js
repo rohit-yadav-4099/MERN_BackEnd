@@ -1,36 +1,14 @@
 const {CourseAdd} = require("../model/CourseModel")
 
-// const Cart = async (req, res) => {
-//   const dataone = req.body;
-//   const data = await AddCart.create(dataone);
-//   res.send(data);
-// };
-
-// const getcartadd = async (req, res) => {
-//   const data = await AddCart.find({});
-//   res.send(data);
-// };
-
-// const DeleteCardone = async (req,res) =>{
-//   const deletedata = await AddCart.deleteMany({});
-//   res.send(deletedata)
-// }
-
-const CourseBuy = async (req, res) => {
-  const data = req.body;
-  const createdata = await CourseAdd.create(data);
-  res.send(createdata);
-};
-const BuyGetCourse = async (req, res) => {
-  const getcoursedata = await CourseAdd.find({});
-  res.send(getcoursedata);
+const buyCourse = async (req, res) => {
+  const coursedata = req.body;
+  const buydata =  await CourseAdd.create(coursedata)
+  res.send(buydata);
 };
 
-// const DeleteCart = async (req, res) => {
-//   const data=req.body;
-//   console.log(data.id)
-//   const deletedata = await AddCart.findOneAndDelete({id:data.id});
-//   res.send(deletedata);
-// };
+const courseBuy = async (req, res) => {
+  const result = await CourseAdd.find({});
+  res.send(result);
+};
 
-module.exports = {  CourseBuy, BuyGetCourse};
+module.exports = {buyCourse,courseBuy};
