@@ -12,6 +12,7 @@ const AddCourse = mongoose.Schema({
     participantsheading:String,
     duration:String,
     durationheading :String,
+    
 });
 
 const CourseAdd = mongoose.model("AddtoCartModel", AddCourse);

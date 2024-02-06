@@ -48,7 +48,8 @@ const login = async (req, res) => {
         return res.send({
           msg: "user login successfully",
           token: token,
-          name: details.name
+          name: details.name,
+          email:details.email
         });
       } else {
         return res.send({
